@@ -18,7 +18,7 @@ def on_response(*args):
 
 with SocketIO('https://mede-chat-app.herokuapp.com/socket.io/', 443, LoggingNamespace) as socketIO:
     socketIO.emit('joinRoom', {
-        "Burak": "name",
+        "name": "Melih",
         "room": "deneme"
     })
     socketIO.on('message', on_response)
